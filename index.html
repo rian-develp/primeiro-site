@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro-site</title>
+    <style>
+
+        body {
+            margin: 0;
+            background-color: black;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            padding: 1rem;
+        }
+
+        header h1 {
+            align-self: center;
+            color: white;
+            padding-bottom: 1rem;
+        }
+
+        header nav {
+            display: flex;
+            width: max-content;
+            flex-direction: row;
+            justify-content: space-around;
+            align-self: center;
+        }
+
+        header nav a {
+            padding-right: 2rem;
+            padding-left: 2rem;
+            font-weight: bold;
+            font-size: large;
+            color: white;
+        }
+
+        main section {
+            width: 100%;
+            height: max-content;
+        }
+
+        .h2__about_course_title {
+            color: white;
+            margin-top: 9rem;
+            margin-left: 3rem;
+        }
+
+        .p__about_course_text {
+            color: white;
+            font-weight: bold;
+            font-size: medium;
+            margin-left: 3rem;
+            margin-right: 11rem;
+        }
+
+        .h2__tags_title {
+            color: white;
+            margin-top: 9rem;
+            margin-left: 3rem;
+        }
+
+        .p__tags_text {
+            color: white;
+            font-weight: bold;
+            font-size: medium;
+            margin-left: 3rem;
+            margin-right: 11rem;
+        }
+
+        section .h1__example {
+            color: white;
+            margin-left: 8rem;
+            margin-top: 6rem;
+        }
+
+        section .h2__example {
+            color: white;
+            margin-left: 8rem;
+        }
+
+        section .h3__example {
+            color: white;
+            margin-left: 8rem;
+        }
+
+        section .h4__example {
+            color: white;
+            margin-left: 8rem;
+        }
+
+        section .h5__example {
+            color: white;
+            margin-left: 8rem;
+        }
+
+        section .h6__example {
+            color: white;
+            margin-left: 8rem;
+        }
+
+        section .p__example {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 8rem;
+            font-size: 1.1rem;
+        }
+
+        section .blockquote__example {
+            color: white;
+            margin-left: 8rem;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <!-- Meu Header-->
+    <header>
+        <h1> Olá esse é meu primeiro site</h1>
+        <nav>
+            <a 
+                href="https://invictus.com.br/blogs/news/nas-margens-do-mississippi-um-guia-para-a-historia-e-o-som-do-blues#:~:text=BLUES%3A%20UMA%20BREVE%20HIST%C3%93RIA,de%20culto%2C%20celebra%C3%A7%C3%A3o%20e%20entretenimento."
+                target="_blank"
+            >
+                História do Blues
+            </a>
+
+            <a 
+                href="https://mundoeducacao.uol.com.br/curiosidades/exercito-brasileiro.htm#:~:text=Oficialmente%20entende%2Dse%20que%20o,deu%20origem%20ao%20nosso%20Ex%C3%A9rcito."
+                target="_blank"
+            >
+                Exército Brasileiro
+            </a>
+
+            <a 
+                href="https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2025/06/13/quem-foi-santo-antonio-conheca-a-historia-do-santo-casamenteiro.htm#:~:text=O%20dia%20de%20Santo%20Ant%C3%B4nio,celebrado%20neste%2013%20de%20junho."
+                target="_blank"
+            >
+                Dia de Santo Antônio
+            </a>
+        </nav>
+    </header>
+
+
+    <!-- Minha main-->
+    <main>
+
+        <!-- Section sobre o que eu aprendi no curso -->
+        <section>
+            <h2 class="h2__about_course_title"> Sobre o curso </h2>
+            <p class="p__about_course_text">
+                Neste curso Front-end da DIO em parceria com o Santander aprendi a usar Tags, elas são importantes,
+                pois é com elas que eu vou montar a estrutura do meu site. Mas não basta só sair usando as tags,
+                deve-se entender de semântica para que não ocorra de teu site ter uma estrutura bagunçada, a seguir
+                mostrarei algumas tags que aprendi ao longo do curso.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="h2__tags_title">• Tags h1, h2, h3, h4, h5, h6 </h2>
+            <p class="p__tags_text">
+                A tag h1 é usada como título, ela mostra o texto digitado
+                em negrito e com um tamanho de fonte grande. Enquanto as outras 
+                servem como subtítulo. Segue o exemplo abaixo:
+            </p>
+
+            <h1 class="h1__example">Exemplo de Tag h1</h1>
+            <h2 class="h2__example">Exemplo de Tag h2</h2>
+            <h3 class="h3__example">Exemplo de Tag h3</h3>
+            <h4 class="h4__example">Exemplo de Tag h4</h4>
+            <h5 class="h5__example">Exemplo de Tag h5</h5>
+            <h6 class="h6__example">Exemplo de Tag h6</h6>
+
+            <h2 class="h2__tags_title">• Tags p, q, a, b</h2>
+            <p class="p__tags_text">
+                A tag p serve para escrever textos, a tag "q" para citações, a tag "a" para 
+                links e a tag "b" para deixar palavras específicas em negrito. Segue o exemplo
+                abaixo:
+            </p>
+
+            <p class="p__example"> Exemplo de tag p </p>
+            <p class="p__example"> Exemplo da tag p com <b>tag "b"</b></p>
+            <p class="p__example"> Exemplo da tag p com <u>underline</u></p>
+            <p class="p__example"> Exemplo da tag p com <sup>tag sup</sup></p>
+            <p class="p__example"> Exemplo da tag p com <sub>tag sub</sub></p>
+            <p class="p__example"> Exemplo da tag p com <a href="index.html">tag "a"</a></p>
+            <p class="p__example"> Exemplo da tag p com tag "q": <q class="blockquote__example">E disse Deus: haja luz.</q> </p>
+            <blockquote class="blockquote__example">
+                O blockquote já é mais trabalhoso porque tem que colocar manualmente
+                as aspas e porque ele faz uma quebra de linha. E sim esse texto é um exemplo   
+                da tag blockquote: "O senhor é meu pastor e nada me faltará".
+            </blockquote>
+        </section>
+
+    </main>
+
+    <!-- Meu rodapé -->
+    <footer></footer>
+</body>
+</html>
