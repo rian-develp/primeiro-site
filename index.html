@@ -116,6 +116,16 @@
             color: white;
             margin-left: 8rem;
         }
+
+        .audio {
+            margin-left: 3rem;
+            margin-top: 2rem;
+            padding-bottom: 3rem;
+        }
+
+        .video {
+            margin-left: 3rem;
+        }
     
     </style>
 </head>
@@ -163,6 +173,7 @@
             </p>
         </section>
 
+        <!-- Section para de Tags de Texto -->
         <section>
             <h2 class="h2__tags_title">• Tags h1, h2, h3, h4, h5, h6 </h2>
             <p class="p__tags_text">
@@ -199,6 +210,29 @@
             </blockquote>
         </section>
 
+        <!-- Section de Tags de Mídia -->
+        <section>
+            <h2 class="h2__tags_title">• Tags video, track, audio, picture, img</h2>
+            <p class="p__tags_text">
+                A tag video serve para inserir vídeo, a tag track serve para inserir legendas,
+                a tag audio serve para inserir audios, a tag picture para inserir imagens, e a tag
+                img serve para inserir imagens também.
+                servem como subtítulo. Segue o exemplo abaixo:
+            </p>
+
+            <h3 class="h3__example">Exemplo de Tag audio</h3>
+            <audio class="audio" controls>
+                <source src="assets/Frases_Motivacionais.mp3"/>
+                Seu navegador não tem suporte para esse audio
+            </audio>
+
+            <h3 class="h3__example">Exemplo de Tag video com track</h3>
+            <video class="video" controls>
+                <source src="assets/video_motivacional.mp4"/>
+                <track src="assets/video_motivacional.vtt" kind="subtitles" srclang="pt"/>
+                Seu navegador não tem suporte para esse video.
+            </video>
+        </section>
     </main>
 
     <!-- Meu rodapé -->
